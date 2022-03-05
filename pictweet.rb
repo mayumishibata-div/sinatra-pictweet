@@ -15,3 +15,9 @@ end
 get "/tweets/new" do
     erb :new 
 end
+
+post "/tweets" do
+#   binding.pry
+    Tweet.create(params)
+    redirect "/"
+end

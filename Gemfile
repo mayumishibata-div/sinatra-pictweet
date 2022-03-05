@@ -10,3 +10,4 @@ gem "sinatra-activerecord", '2.0.19'
 gem 'activerecord', '~> 5.2.0'
 gem "sqlite3"
 gem "rake"  
+gem "pry"
