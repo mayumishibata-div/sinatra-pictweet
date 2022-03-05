@@ -11,3 +11,7 @@ get "/" do
     @random = rand(6) + 1
     erb :index
 end
+
+get "/tweets/new" do
+    erb :new 
+end
