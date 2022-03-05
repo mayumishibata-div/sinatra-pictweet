@@ -32,3 +32,14 @@ patch "/tweets/:id" do
   tweet.update(text: params[:text], image: params[:image])
   redirect "/"
 end
+
+get "/tweets/:id/delete" do
+  @tweet = Tweet.find(params[:id])
+  erb :delete
+end
+
+delete "/tweets/:id" do
+  tweet = Tweet.find(params[:id])
+  tweet.delete
+  redirect "/"
+end
